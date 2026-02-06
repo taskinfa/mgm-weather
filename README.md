@@ -23,13 +23,13 @@
 
 1. Open **HACS** in Home Assistant.  
 2. Go to **Integrations** \> click the 3 dots in the top right corner \> **Custom repositories**.  
-3. Paste the URL of this repository: https://github.com/USERNAME/REPO\_NAME (Replace with your actual repo URL).  
+3. Paste the URL of this repository: https://github.com/taskinfa/mgm-weather
 4. Select **Integration** as the category and click **Add**.  
 5. Search for **"MGM Hava Durumu (FT)"** and install it.  
 6. **Restart** Home Assistant.  
 7. Home Assistant'ta **HACS** menüsünü açın.  
 8. **Integrations** (Entegrasyonlar) kısmına gidin \> sağ üstteki üç noktaya tıklayın \> **Custom repositories** (Özel depolar).  
-9. Bu reponun adresini yapıştırın: https://github.com/KULLANICIADINIZ/REPO\_ADINIZ (Kendi GitHub linkinizle değiştirin).  
+9. Bu reponun adresini yapıştırın: https://github.com/taskinfa/mgm-weather 
 10. Kategori olarak **Integration** seçin ve **Ekle** deyin.  
 11. Listeden **"MGM Hava Durumu (FT)"** entegrasyonunu bulup indirin.  
 12. Home Assistant'ı **Yeniden Başlatın**.
