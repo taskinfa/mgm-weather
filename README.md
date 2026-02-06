@@ -1,77 +1,153 @@
-# **MGM Weather (FT) \- Home Assistant Integration**
+MGM Weather (FT) - Home Assistant Integration
 
-**MGM Weather (FT)** is a custom integration for Home Assistant that retrieves weather data from the Turkish State Meteorological Service (MGM) via a custom proxy API. It provides accurate, localized weather conditions and forecasts for cities in Turkey.
+<!-- Dil Seçimi / Language Selection -->
 
-**MGM Weather (FT)**, Türkiye Meteoroloji Genel Müdürlüğü (MGM) verilerini özel bir proxy API üzerinden Home Assistant'a aktaran özel bir entegrasyondur. Türkiye'deki şehirler için en doğru anlık hava durumu ve tahmin verilerini sağlar.
+<div align="center">
+<h3>
+<a href="#english">English</a> | <a href="#türkçe-kılavuz">Türkçe</a>
+</h3>
+</div>
 
-## **🌟 Features / Özellikler**
+<a name="english"></a>
 
-* **Real-time Data:** Fetches current temperature, humidity, wind speed, pressure, and weather conditions.  
-* **Daily Forecast:** Provides a 5-day weather forecast.  
-* **Easy Configuration:** Setup directly via the Home Assistant UI (Config Flow).  
-* **Multi-City Support:** Add as many cities as you like.  
-* **Localized:** Fully compatible with Turkish locations and weather codes.  
-* **Anlık Veri:** Sıcaklık, nem, rüzgar hızı, basınç ve hava durumu ikonunu anlık çeker.  
-* **Günlük Tahmin:** 5 günlük hava tahmini sunar.  
-* **Kolay Kurulum:** Home Assistant arayüzü üzerinden (Config Flow) saniyeler içinde kurulur.  
-* **Çoklu Şehir:** İstediğiniz kadar farklı şehir ekleyebilirsiniz.  
-* **Yerelleştirilmiş:** Türkiye lokasyonları ve MGM hava durumu kodlarıyla tam uyumludur.
+🇬🇧 English
 
-## **🚀 Installation / Kurulum**
+MGM Weather (FT) is a custom integration for Home Assistant that retrieves weather data from the Turkish State Meteorological Service (MGM) via a custom proxy API. It provides accurate, localized weather conditions and forecasts for cities in Turkey.
 
-### **Method 1: HACS (Recommended) / Yöntem 1: HACS (Önerilen)**
+🌟 Features
 
-1. Open **HACS** in Home Assistant.  
-2. Go to **Integrations** \> click the 3 dots in the top right corner \> **Custom repositories**.  
-3. Paste the URL of this repository: https://github.com/taskinfa/mgm-weather
-4. Select **Integration** as the category and click **Add**.  
-5. Search for **"MGM Hava Durumu (FT)"** and install it.  
-6. **Restart** Home Assistant.  
-7. Home Assistant'ta **HACS** menüsünü açın.  
-8. **Integrations** (Entegrasyonlar) kısmına gidin \> sağ üstteki üç noktaya tıklayın \> **Custom repositories** (Özel depolar).  
-9. Bu reponun adresini yapıştırın: https://github.com/taskinfa/mgm-weather 
-10. Kategori olarak **Integration** seçin ve **Ekle** deyin.  
-11. Listeden **"MGM Hava Durumu (FT)"** entegrasyonunu bulup indirin.  
-12. Home Assistant'ı **Yeniden Başlatın**.
+Real-time Data: Fetches current temperature, humidity, wind speed, pressure, and weather conditions.
 
-### **Method 2: Manual / Yöntem 2: Manuel**
+Daily Forecast: Provides a 5-day weather forecast.
 
-1. Download the latest release.  
-2. Copy the custom\_components/mgm\_weather folder to your Home Assistant's custom\_components directory.  
-3. **Restart** Home Assistant.  
-4. En son sürümü indirin.  
-5. custom\_components/mgm\_weather klasörünü Home Assistant dizininizdeki custom\_components klasörünün içine kopyalayın.  
-6. Home Assistant'ı **Yeniden Başlatın**.
+Easy Configuration: Setup directly via the Home Assistant UI (Config Flow).
 
-## **⚙️ Configuration / Yapılandırma**
+Multi-City Support: Add as many cities as you like.
 
-1. Go to **Settings** \> **Devices & Services**.  
-2. Click **\+ ADD INTEGRATION** in the bottom right corner.  
-3. Search for **"MGM Hava Durumu (FT)"**.  
-4. Enter your city name (e.g., Istanbul, Afyonkarahisar, Ankara) in the popup box.  
-5. Click **Submit**.  
-6. **Ayarlar** \> **Cihazlar ve Hizmetler** menüsüne gidin.  
-7. Sağ alttaki **\+ ENTEGRASYON EKLE** butonuna tıklayın.  
-8. Arama kutusuna **"MGM Hava Durumu (FT)"** yazın.  
-9. Açılan pencereye şehir adını yazın (Örn: Istanbul, Afyonkarahisar, Ankara).  
-10. **Gönder** butonuna tıklayın.
+Localized: Fully compatible with Turkish locations and weather codes.
 
-## **📊 Dashboard Card Example / Kart Örneği**
+🚀 Installation
+
+Method 1: HACS (Recommended)
+
+Open HACS in Home Assistant.
+
+Go to Integrations > click the 3 dots in the top right corner > Custom repositories.
+
+Paste the URL of this repository: https://github.com/taskinfa/mgm-weather
+
+Select Integration as the category and click Add.
+
+Search for "MGM Hava Durumu (FT)" and install it.
+
+Restart Home Assistant.
+
+Method 2: Manual
+
+Download the latest release.
+
+Copy the custom_components/mgm_weather folder to your Home Assistant's custom_components directory.
+
+Restart Home Assistant.
+
+⚙️ Configuration
+
+Go to Settings > Devices & Services.
+
+Click + ADD INTEGRATION in the bottom right corner.
+
+Search for "MGM Hava Durumu (FT)".
+
+Enter your city name (e.g., Istanbul, Afyonkarahisar, Ankara) in the popup box.
+
+Click Submit.
+
+📊 Dashboard Card Example
 
 You can use the standard weather card or a custom card like Mushroom.
 
-Standart hava durumu kartını veya Mushroom gibi özel kartları kullanabilirsiniz.
+type: weather-forecast
+entity: weather.mgm_afyonkarahisar
+name: Afyonkarahisar (MGM)
+forecast_type: daily
 
-type: weather-forecast  
-entity: weather.mgm\_afyonkarahisar  
-name: Afyonkarahisar (MGM)  
-forecast\_type: daily
 
-## **❤️ Credits & Disclaimer**
+❤️ Credits & Disclaimer
 
-* **Developer:** Fatih Taşkın  
-* **Data Source:** Turkish State Meteorological Service (MGM) via proxy API.
+Developer: Fatih Taşkın
+
+Data Source: Turkish State Meteorological Service (MGM) via proxy API.
 
 This is a custom integration and is not officially affiliated with MGM.
+
+<a name="türkçe-kılavuz"></a>
+
+🇹🇷 Türkçe Kılavuz
+
+MGM Weather (FT), Türkiye Meteoroloji Genel Müdürlüğü (MGM) verilerini özel bir proxy API üzerinden Home Assistant'a aktaran özel bir entegrasyondur. Türkiye'deki şehirler için en doğru anlık hava durumu ve tahmin verilerini sağlar.
+
+🌟 Özellikler
+
+Anlık Veri: Sıcaklık, nem, rüzgar hızı, basınç ve hava durumu ikonunu anlık çeker.
+
+Günlük Tahmin: 5 günlük hava tahmini sunar.
+
+Kolay Kurulum: Home Assistant arayüzü üzerinden (Config Flow) saniyeler içinde kurulur.
+
+Çoklu Şehir: İstediğiniz kadar farklı şehir ekleyebilirsiniz.
+
+Yerelleştirilmiş: Türkiye lokasyonları ve MGM hava durumu kodlarıyla tam uyumludur.
+
+🚀 Kurulum
+
+Yöntem 1: HACS (Önerilen)
+
+Home Assistant'ta HACS menüsünü açın.
+
+Integrations (Entegrasyonlar) kısmına gidin > sağ üstteki üç noktaya tıklayın > Custom repositories (Özel depolar).
+
+Bu reponun adresini yapıştırın: https://github.com/taskinfa/mgm-weather
+
+Kategori olarak Integration seçin ve Ekle deyin.
+
+Listeden "MGM Hava Durumu (FT)" entegrasyonunu bulup indirin.
+
+Home Assistant'ı Yeniden Başlatın.
+
+Yöntem 2: Manuel
+
+En son sürümü indirin.
+
+custom_components/mgm_weather klasörünü Home Assistant dizininizdeki custom_components klasörünün içine kopyalayın.
+
+Home Assistant'ı Yeniden Başlatın.
+
+⚙️ Yapılandırma
+
+Ayarlar > Cihazlar ve Hizmetler menüsüne gidin.
+
+Sağ alttaki + ENTEGRASYON EKLE butonuna tıklayın.
+
+Arama kutusuna "MGM Hava Durumu (FT)" yazın.
+
+Açılan pencereye şehir adını yazın (Örn: Istanbul, Afyonkarahisar, Ankara).
+
+Gönder butonuna tıklayın.
+
+📊 Kart Örneği
+
+Standart hava durumu kartını veya Mushroom gibi özel kartları kullanabilirsiniz.
+
+type: weather-forecast
+entity: weather.mgm_afyonkarahisar
+name: Afyonkarahisar (MGM)
+forecast_type: daily
+
+
+❤️ Emeği Geçenler & Yasal Uyarı
+
+Geliştirici: Fatih Taşkın
+
+Veri Kaynağı: Türkiye Meteoroloji Genel Müdürlüğü (MGM).
 
 Bu özel bir entegrasyondur ve MGM ile resmi bir bağlantısı yoktur.
