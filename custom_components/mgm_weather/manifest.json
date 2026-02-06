@@ -1,11 +1,12 @@
 {
   "domain": "mgm_weather",
   "name": "MGM Hava Durumu (FT)",
-  "codeowners": ["@githubkullaniciadin"],
+  "codeowners": ["@taskinfa"],
   "config_flow": true,
-  "documentation": "https://github.com/githubkullaniciadin/mgm-weather",
+  "documentation": "https://github.com/taskinfa/mgm-weather",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/githubkullaniciadin/mgm-weather/issues",
+  "issue_tracker": "https://github.com/taskinfa/mgm-weather/issues",
   "requirements": [],
   "version": "1.0.0"
+
 }
