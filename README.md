@@ -66,10 +66,18 @@ Click Submit.
 
 You can use the standard weather card or a custom card like Mushroom.
 
+```yaml
+show_current: true
+show_forecast: true
 type: weather-forecast
-entity: weather.mgm_afyonkarahisar
-name: Afyonkarahisar (MGM)
+entity: weather.mgm_weather_mgm_afyonkarahisar
 forecast_type: daily
+name: Afyonkarahisar
+forecast_slots: 6
+grid_options:
+  rows: 4
+  columns: full
+```
 
 
 ❤️ Credits & Disclaimer
@@ -138,10 +146,18 @@ Gönder butonuna tıklayın.
 
 Standart hava durumu kartını veya Mushroom gibi özel kartları kullanabilirsiniz.
 
+```yaml
+show_current: true
+show_forecast: true
 type: weather-forecast
-entity: weather.mgm_afyonkarahisar
-name: Afyonkarahisar (MGM)
+entity: weather.mgm_weather_mgm_afyonkarahisar
 forecast_type: daily
+name: Afyonkarahisar
+forecast_slots: 6
+grid_options:
+  rows: 4
+  columns: full
+```
 
 
 ❤️ Emeği Geçenler & Yasal Uyarı
