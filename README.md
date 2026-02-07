@@ -1,5 +1,8 @@
 MGM Weather (FT) - Home Assistant Integration
 
+![mgm-weather-ft](https://github.com/user-attachments/assets/ac0bd2e5-035c-4c47-a6c2-877c08a061b2)
+
+
 <!-- Dil Seçimi / Language Selection -->
 
 <div align="center">
